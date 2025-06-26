@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{016b5353-e261-43d8-b1ce-871dbd964d23}</ProjectGuid>
+    <RootNamespace>CurvRBF</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.8.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependence\armadillo-14.2.3_openblas64\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependence\armadillo-14.2.3_openblas64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libopenblas.lib;libarmadillo.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dependence\armadillo-14.2.3_openblas64\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/D_HAS_STD_BYTE=0 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependence\armadillo-14.2.3_openblas64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libopenblas.lib;libarmadillo.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="kernelFunction.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RBF.cpp" />
+    <ClCompile Include="reader.cpp" />
+    <ClCompile Include="surfacer\ImplicitedSurfacing.cpp" />
+    <ClCompile Include="surfacer\polygonizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernelFunction.h" />
+    <ClInclude Include="RBF.h" />
+    <ClInclude Include="reader.h" />
+    <ClInclude Include="surfacer\ImplicitedSurfacing.h" />
+    <ClInclude Include="surfacer\Polygonizer.h" />
+    <ClInclude Include="surfacer\utils\BaryPoly.h" />
+    <ClInclude Include="surfacer\utils\C2_ComplexNumbers.H" />
+    <ClInclude Include="surfacer\utils\C2_LFTTC.H" />
+    <ClInclude Include="surfacer\utils\C2_LFTTC_i.H" />
+    <ClInclude Include="surfacer\utils\C2_PointTC.H" />
+    <ClInclude Include="surfacer\utils\C2_PointTC_i.H" />
+    <ClInclude Include="surfacer\utils\Crv_Basis.H" />
+    <ClInclude Include="surfacer\utils\Ctr2SufManager.H" />
+    <ClInclude Include="surfacer\utils\Image_Raw.H" />
+    <ClInclude Include="surfacer\utils\Image_Raw1D.H" />
+    <ClInclude Include="surfacer\utils\LiveWire.h" />
+    <ClInclude Include="surfacer\utils\Mesh_Array.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Bbox.H" />
+    <ClInclude Include="surfacer\utils\Mesh_GMesh.H" />
+    <ClInclude Include="surfacer\utils\Mesh_HashStruct.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Hh.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Intersect.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Map.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Mesh.H" />
+    <ClInclude Include="surfacer\utils\Mesh_PolygonSpatial.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Pool.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Pqueue.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Queue.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Random.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Set.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Spatial.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Stack.H" />
+    <ClInclude Include="surfacer\utils\Mesh_Stat.H" />
+    <ClInclude Include="surfacer\utils\PMeshLite_Ply.H" />
+    <ClInclude Include="surfacer\utils\Pm_MeshLite.H" />
+    <ClInclude Include="surfacer\utils\Pm_MeshLite_i.H" />
+    <ClInclude Include="surfacer\utils\Ppm.H" />
+    <ClInclude Include="surfacer\utils\R2_Boxed_polygon_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Contour.H" />
+    <ClInclude Include="surfacer\utils\R2_Contour_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Ellipse_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Line_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Line_seg_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Polygon_i.H" />
+    <ClInclude Include="surfacer\utils\R2_Sphere_i.H" />
+    <ClInclude Include="surfacer\utils\R3_Ellipse_i.H" />
+    <ClInclude Include="surfacer\utils\R3_Line_i.H" />
+    <ClInclude Include="surfacer\utils\R3_Line_seg_i.H" />
+    <ClInclude Include="surfacer\utils\R3_Plane.H" />
+    <ClInclude Include="surfacer\utils\R3_Polygon_i.H" />
+    <ClInclude Include="surfacer\utils\R3_Sphere_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Affine1.H" />
+    <ClInclude Include="surfacer\utils\Rn_Affine2.H" />
+    <ClInclude Include="surfacer\utils\Rn_Affine3.H" />
+    <ClInclude Include="surfacer\utils\Rn_Affine4.H" />
+    <ClInclude Include="surfacer\utils\Rn_BBox.H" />
+    <ClInclude Include="surfacer\utils\Rn_BBox_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Binary1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Binary2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Binary3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Binary4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_CoVector1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_CoVector2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_CoVector3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_CoVector4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Defs.H" />
+    <ClInclude Include="surfacer\utils\Rn_Ellipse.H" />
+    <ClInclude Include="surfacer\utils\Rn_Io1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Io2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Io3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Io4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Line.H" />
+    <ClInclude Include="surfacer\utils\Rn_Line_seg.H" />
+    <ClInclude Include="surfacer\utils\Rn_Matrix.H" />
+    <ClInclude Include="surfacer\utils\Rn_Matrix2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Matrix3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Matrix4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Point1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Point2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Point3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Point4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Polygon.H" />
+    <ClInclude Include="surfacer\utils\Rn_Polynomial.H" />
+    <ClInclude Include="surfacer\utils\Rn_Polynomial_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Projective.H" />
+    <ClInclude Include="surfacer\utils\Rn_Projective_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Sphere.H" />
+    <ClInclude Include="surfacer\utils\Rn_Unary1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Unary2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Unary3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Unary4_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_vector.h" />
+    <ClInclude Include="surfacer\utils\Rn_Vector1_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Vector2_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Vector3_i.H" />
+    <ClInclude Include="surfacer\utils\Rn_Vector4_i.H" />
+    <ClInclude Include="surfacer\utils\S4_quaternion.H" />
+    <ClInclude Include="surfacer\utils\tdgTimer.h" />
+    <ClInclude Include="surfacer\utils\Utils_Barys.H" />
+    <ClInclude Include="surfacer\utils\Utils_Bits.H" />
+    <ClInclude Include="surfacer\utils\Utils_Color.H" />
+    <ClInclude Include="surfacer\utils\Utils_Dots.H" />
+    <ClInclude Include="surfacer\utils\Utils_Dots_i.H" />
+    <ClInclude Include="surfacer\utils\Utils_EdgeFilter.H" />
+    <ClInclude Include="surfacer\utils\Utils_EditStamp.H" />
+    <ClInclude Include="surfacer\utils\Utils_Element.H" />
+    <ClInclude Include="surfacer\utils\Utils_Element_i.H" />
+    <ClInclude Include="surfacer\utils\Utils_GaborFilter.H" />
+    <ClInclude Include="surfacer\utils\Utils_GeomArray.H" />
+    <ClInclude Include="surfacer\utils\Utils_IcosahedralSampler.H" />
+    <ClInclude Include="surfacer\utils\Utils_Io.H" />
+    <ClInclude Include="surfacer\utils\Utils_Polygon_mapping.H" />
+    <ClInclude Include="surfacer\utils\Utils_Timer.H" />
+    <ClInclude Include="surfacer\utils\Utils_Toggle.H" />
+    <ClInclude Include="surfacer\WINSystemDefines.H" />
+    <ClInclude Include="surfacer_Dmc_GPU\CellIntersection.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\CTimer.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\DualMarchingCubes.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\EdgeHashTable.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\Edges.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\ElementQuality.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\EstimateElementQuality.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\FaceColoring.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeFaces.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeHashTable.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeMesh.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\Halfedges.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeVertices.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\helper_cuda.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\MarchingCubesLookupTables.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\MCPolygon.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\MeshSimplification.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\QuadrilateralHashTable.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\QuadrilateralMap.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\Quadrilaterals.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\QualityMeasure.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\Triangles.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\UniformGrid.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\ValenceHashTable.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\VertexHashTable.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\VertexMap.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\VertexRepresentative.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\VertexValence.h" />
+    <ClInclude Include="surfacer_Dmc_GPU\Vertices.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="surfacer_Dmc_GPU\DualMarchingCubes.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\EstimateElementQuality.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\FaceColoring.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\HalfedgeMesh.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\MeshSimplification.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\UniformGrid.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="surfacer_Dmc_GPU\VertexValence.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.8.targets" />
+  </ImportGroup>
+</Project>

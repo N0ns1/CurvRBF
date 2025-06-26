@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kernelFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RBF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="surfacer\ImplicitedSurfacing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="surfacer\polygonizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kernelFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RBF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\BaryPoly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\C2_ComplexNumbers.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\C2_LFTTC.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\C2_LFTTC_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\C2_PointTC.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\C2_PointTC_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Crv_Basis.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Ctr2SufManager.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Image_Raw.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Image_Raw1D.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\LiveWire.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Array.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Bbox.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_GMesh.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_HashStruct.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Hh.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Intersect.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Map.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Mesh.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_PolygonSpatial.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Pool.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Pqueue.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Queue.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Random.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Set.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Spatial.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Stack.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Mesh_Stat.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Pm_MeshLite.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Pm_MeshLite_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\PMeshLite_Ply.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Ppm.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Boxed_polygon_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Contour.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Contour_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Ellipse_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Line_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Line_seg_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Polygon_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R2_Sphere_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Ellipse_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Line_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Line_seg_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Plane.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Polygon_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\R3_Sphere_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Affine1.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Affine2.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Affine3.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Affine4.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_BBox.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_BBox_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Binary1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Binary2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Binary3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Binary4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_CoVector1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_CoVector2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_CoVector3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_CoVector4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Defs.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Ellipse.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Io1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Io2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Io3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Io4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Line.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Line_seg.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Matrix.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Matrix2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Matrix3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Matrix4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Point1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Point2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Point3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Point4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Polygon.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Polynomial.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Polynomial_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Projective.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Projective_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Sphere.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Unary1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Unary2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Unary3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Unary4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Vector1_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Vector2_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Vector3_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Rn_Vector4_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\S4_quaternion.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\tdgTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Barys.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Bits.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Color.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Dots.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Dots_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_EdgeFilter.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_EditStamp.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Element.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Element_i.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_GaborFilter.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_GeomArray.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_IcosahedralSampler.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Io.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Polygon_mapping.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Timer.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\utils\Utils_Toggle.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\ImplicitedSurfacing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\Polygonizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer\WINSystemDefines.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\CellIntersection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\CTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\DualMarchingCubes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\EdgeHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\Edges.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\ElementQuality.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\EstimateElementQuality.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\FaceColoring.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeFaces.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\Halfedges.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\HalfedgeVertices.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\helper_cuda.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\MarchingCubesLookupTables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\MCPolygon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\MeshSimplification.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\QuadrilateralHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\QuadrilateralMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\Quadrilaterals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\QualityMeasure.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\Triangles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\UniformGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\ValenceHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\VertexHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\VertexMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\VertexRepresentative.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\VertexValence.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surfacer_Dmc_GPU\Vertices.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="surfacer_Dmc_GPU\DualMarchingCubes.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\EstimateElementQuality.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\FaceColoring.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\HalfedgeMesh.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\MeshSimplification.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\UniformGrid.cu" />
+    <CudaCompile Include="surfacer_Dmc_GPU\VertexValence.cu" />
+  </ItemGroup>
+</Project>

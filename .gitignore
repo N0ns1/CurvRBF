@@ -1,0 +1,39 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*_i.c
+*_p.c
+*.ncb
+*.opensdf
+*.sdf
+*.cache
+*.VC.db
+*.VC.VC.opendb
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+ARM64/
+Win32/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Other
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.lib
+*.obj
+*.tlog
+*.log
