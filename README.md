@@ -35,7 +35,7 @@ Follow these steps to compile the project:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/CurvRBF.git
+    git clone https://github.com/N0ns1/CurvRBF.git
     cd CurvRBF
     ```
 2.  Open the `CurvRBF.sln` file with Visual Studio.
