@@ -6,8 +6,7 @@ This repository contains the official C++ implementation for the paper:
 
 **CurvRBF: Mean Curvature-Controllable Radial Basis Functions for Implicit Geological Modeling**
 *Yuxiang Chen, Hao Deng, Yang Zheng, Wenwen Shi, Xiancheng Mao*
-
-*(Note: The paper is currently under review. A link to the publication will be added upon acceptance.)*
+*(https://doi.org/10.1007/s11004-025-10226-0)*
 
 
 ---
